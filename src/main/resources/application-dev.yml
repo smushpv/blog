@@ -1,0 +1,20 @@
+spring:
+# 配置数据库
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blogg?serverTimezone=UTC
+    username: root
+    password: 1234
+#  配置jpa
+  jpa:
+    hibernate:
+#      在生产环境里用“update”，可以更改数据库的表结构
+      ddl-auto: update
+#      sql语句输出在控制台和日志
+    show-sql: true
+#配置日志
+logging:
+  level:
+    root: info
+    com.jxa: debug
+  file: log/blog-dev.log

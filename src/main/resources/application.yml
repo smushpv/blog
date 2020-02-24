@@ -1,0 +1,6 @@
+spring:
+# 配置thymeleaf模板
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
