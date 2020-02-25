@@ -15,7 +15,7 @@ import java.util.List;
 @Setter
 @Getter
 @ToString(exclude = {"blogs"})
-@NoArgsConstructor//无参数构造方法
+@NoArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

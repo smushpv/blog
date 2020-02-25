@@ -29,7 +29,7 @@ public class AdminController {
         User user = userService.getOneUser(username,password);
         if (user != null){
             user.setPassword(null);
-            session.setAttribute("u",user);
+            session.setAttribute("user",user);
             return "admin/index";
         }else {
             attributes.addFlashAttribute("message","用户名或密码错误");
